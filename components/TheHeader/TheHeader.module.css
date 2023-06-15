@@ -1,0 +1,21 @@
+.link {
+	position: relative;
+}
+
+.link:hover {
+	color: rgb(255, 255, 255);
+}
+
+.link:hover::after {
+	width: 100%;
+	height: 2px;
+
+	content: '';
+
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	z-index: 1;
+
+	background-color: rgb(255, 255, 255);
+}
